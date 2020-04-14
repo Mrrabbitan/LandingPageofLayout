@@ -1,15 +1,17 @@
 import React from "react";
 import { Row, Col } from "antd";
-import style from "./index.less";
+import "./index.css";
 
 const FrontPageComponent: React.FC = () => {
   return (
     <>
-      <Row>
-        <Col className={style.leftBlue}></Col>
-        <Col className={style.leftBlueSec}></Col>
-        <Col className={style.middleWhite}></Col>
-        <Col className={style.rightBlue}></Col>
+      <div className="logo">LOGO</div>
+      <Row className="oneRow">
+        <Col span={2} className="leftBlue"></Col>
+        <Col span={2} className="leftBlueSec"></Col>
+        <Col span={2} className="middleWhite"></Col>
+        <Col span={2} className="rightBlue"></Col>
+        <Col span={2} className="orangeLine"></Col>
       </Row>
     </>
   );
