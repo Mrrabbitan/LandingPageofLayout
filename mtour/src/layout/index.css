@@ -18,25 +18,28 @@ body {
 .oneRow {
   width: 100%;
   height: 800px;
-  max-width: 800px;
+  max-width: 880px;
+  min-width: 600px;
   display: flex;
 }
 .leftBlue {
-  height: 100%;
+  height: 140%;
   width: 385px;
   background: #264bb9;
+  transform-origin: right top;
   transform: rotate(15deg);
   position: absolute;
   left: -140px;
   top: -80px;
 }
 .leftBlueSec {
-  height: 160%;
+  height: 180%;
   width: 478px;
   background: #2a6ae0;
+  transform-origin: right top;
   transform: rotate(15deg);
   position: absolute;
-  left: -20px;
+  left: 180px;
   top: -110px;
 }
 .rightBlue {
@@ -44,7 +47,8 @@ body {
   width: 200px;
   position: absolute;
   top: 120px;
-  right: -190px;
+  right: -350px;
+  transform-origin: right top;
   transform: rotate(15deg);
   background: #2a6ae0;
 }
@@ -57,4 +61,146 @@ body {
   left: -10px;
   transform-origin: left center;
   transform: skewX(-15deg);
+}
+
+@media screen and (max-width: 1600px) {
+  .logo {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .logo {
+    left: 5.5%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .logo {
+    left: 6%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .logo {
+    left: 6.5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    left: 7%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .logo {
+    left: 7.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo {
+    left: 8%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .logo {
+    left: 8.5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    left: 9.5%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    left: 10.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    left: 10.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    left: 12.5%;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  .orangeLine {
+    width: 460px;
+  }
+}
+@media screen and (max-height: 760px) {
+  .orangeLine {
+    width: 470px;
+  }
+}
+@media screen and (max-height: 740px) {
+  .orangeLine {
+    width: 490px;
+  }
+}
+@media screen and (max-height: 720px) {
+  .orangeLine {
+    width: 500px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .orangeLine {
+    width: 510px;
+  }
+}
+@media screen and (max-height: 680px) {
+  .orangeLine {
+    width: 520px;
+  }
+}
+@media screen and (max-height: 650px) {
+  .orangeLine {
+    width: 530px;
+  }
+}
+@media screen and (max-height: 620px) {
+  .orangeLine {
+    width: 535px;
+  }
+}
+@media screen and (max-height: 580px) {
+  .orangeLine {
+    width: 545px;
+  }
+}
+@media screen and (max-height: 540px) {
+  .orangeLine {
+    width: 560px;
+  }
+}
+@media screen and (max-height: 500px) {
+  .orangeLine {
+    width: 565px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .orangeLine {
+    width: 572px;
+  }
+}
+@media screen and (max-height: 400px) {
+  .orangeLine {
+    width: 580px;
+  }
+}
+@media screen and (max-height: 350px) {
+  .orangeLine {
+    width: 585px;
+  }
+}
+@media screen and (max-height: 300px) {
+  .orangeLine {
+    width: 590px;
+  }
+}
+@media screen and (max-height: 250px) {
+  .orangeLine {
+    width: 595px;
+  }
 }
