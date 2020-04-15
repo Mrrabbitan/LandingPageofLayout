@@ -24,14 +24,16 @@ const ReactButtonComponet: React.FC = () => {
         type="primary"
         size="large"
         style={{
-          width: "200px",
+          textAlign: "right",
+          width: "170px",
           height: "30px",
           border: "none",
-          color: "#0268ea",
+          color: "#0068e8",
           fontWeight: "bold",
           fontSize: "16px",
           cursor: "pointer",
           outline: "none",
+          background: "white",
         }}
         onClick={clickToChange}
         ghost

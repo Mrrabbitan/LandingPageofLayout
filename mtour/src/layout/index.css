@@ -8,7 +8,7 @@ body {
   height: 73px;
   width: 526px;
   position: absolute;
-  top: 3%;
+  top: 4%;
   left: 6%;
   color: white;
   font-size: 40px;
@@ -27,7 +27,7 @@ body {
 .leftBlue {
   height: 150%;
   width: 385px;
-  background: #264bb9;
+  background: #1b48c2;
   transform-origin: right top;
   transform: rotate(15deg);
   position: absolute;
@@ -37,7 +37,7 @@ body {
 .leftBlueSec {
   height: 190%;
   width: 478px;
-  background: #2a6ae0;
+  background: #0068e8;
   transform-origin: right top;
   transform: rotate(15deg);
   position: absolute;
@@ -52,7 +52,7 @@ body {
   right: -350px;
   transform-origin: right top;
   transform: rotate(15deg);
-  background: #2a6ae0;
+  background: #0068e8;
 }
 .orangeLine {
   height: 20px;

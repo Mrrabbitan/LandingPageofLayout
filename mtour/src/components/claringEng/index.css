@@ -110,6 +110,26 @@
   border-radius: 50%;
   animation: glow 12s linear infinite;
 }
+.innerEng::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: white;
+  background-size: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.innerEng:hover::after {
+  opacity: 1;
+  filter: blur(40px);
+  border-radius: 50%;
+  animation: glow 12s linear infinite;
+}
 
 .innerEng:hover {
   transition-duration: 140s;
