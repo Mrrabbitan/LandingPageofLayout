@@ -9,7 +9,7 @@ body {
   width: 526px;
   position: absolute;
   top: 3%;
-  left: 5%;
+  left: 6%;
   color: white;
   font-size: 40px;
   z-index: 100;
@@ -25,7 +25,7 @@ body {
   display: flex;
 }
 .leftBlue {
-  height: 140%;
+  height: 150%;
   width: 385px;
   background: #264bb9;
   transform-origin: right top;
@@ -35,7 +35,7 @@ body {
   top: -80px;
 }
 .leftBlueSec {
-  height: 180%;
+  height: 190%;
   width: 478px;
   background: #2a6ae0;
   transform-origin: right top;
@@ -126,7 +126,7 @@ body {
   }
 }
 
-@media screen and (max-height: 780px) {
+/* @media screen and (max-height: 780px) {
   .orangeLine {
     width: 460px;
   }
@@ -205,4 +205,4 @@ body {
   .orangeLine {
     width: 595px;
   }
-}
+} */

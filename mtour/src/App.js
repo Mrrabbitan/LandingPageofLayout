@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import MainComponent from "./layout/main";
 import EnglishComponent from "./layout/eng";
+import ReactButtonComponet from "../src/components/buttonlan/lan";
 import {
   HashRouter as Router,
   Route,
@@ -9,7 +10,7 @@ import {
   Switch,
 } from "react-router-dom";
 
-const defaultto = "/chi";
+const defaultto = "/zh";
 
 function App() {
   return (
@@ -17,11 +18,11 @@ function App() {
       <Router>
         <Switch>
           <Redirect exact from="/" to={defaultto}></Redirect>
-          <Route path="/chi" component={MainComponent}></Route>
-          <Route path="/eng" component={EnglishComponent}></Route>
+          <Route path="/zh" component={MainComponent}></Route>
+          <Route path="/en" component={EnglishComponent}></Route>
         </Switch>
       </Router>
-      {/* <ButtonComponent></ButtonComponent> */}
+      <ReactButtonComponet></ReactButtonComponet>
     </div>
   );
 }

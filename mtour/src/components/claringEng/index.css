@@ -51,28 +51,28 @@
   }
 } */
 
-.dataCollection {
+.dataCollectionEng {
   position: absolute;
   top: 464px;
-  left: -80px;
+  left: -170px;
   cursor: pointer;
 }
 
-.dataStorage {
+.dataStorageEng {
   position: absolute;
   top: 210px;
-  left: -75px;
+  left: -165px;
   cursor: pointer;
 }
-.milkyWay {
+.milkyWayEng {
   position: absolute;
   top: 15px;
-  left: 280px;
+  left: 250px;
   cursor: pointer;
   z-index: 100;
 }
 
-.total {
+.totalEng {
   height: 800px;
   width: 800px;
 
@@ -80,7 +80,7 @@
   top: 12%;
   left: 43%;
 }
-.inner {
+.innerEng {
   height: 550px;
   width: 550px;
   position: absolute;
@@ -89,7 +89,7 @@
   z-index: 100;
 }
 
-.inner::before {
+.innerEng::before {
   position: absolute;
   content: "";
   top: -5px;
@@ -104,46 +104,52 @@
   transition: 0.5s;
 }
 
-.inner:hover::before {
+.innerEng:hover::before {
   opacity: 1;
   filter: blur(40px);
   border-radius: 50%;
   animation: glow 12s linear infinite;
 }
 
-.inner:hover {
+.innerEng:hover {
   transition-duration: 140s;
   transition-property: transform;
   transform: rotate(6000deg);
   transition-timing-function: linear;
 }
-.outer {
+.outerEng {
   height: 840px;
   width: 840px;
   position: absolute;
   top: 3%;
-  left: -3%;
+  left: -10%;
 }
-
+.btn_all {
+  overflow: hidden;
+}
 .btn_all::before {
   position: absolute;
   content: "";
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  z-index: -1;
-  background: linear-gradient(45deg, #cf9d4b, #f37d2c, #d18c1b);
-  background-size: 100%;
-  animation: glow 12s linear infinite;
-  opacity: 0;
-  border-radius: 40%;
-  transition: 2s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(248, 247, 246, 0.5),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: 0.6s;
+  z-index: 101;
+}
+
+.btn_all:hover {
+  background: transparent;
+  /* box-shadow: 0 0 20px 10px hsla(45deg, 100%, 41%, 0.5); */
 }
 
 .btn_all:hover::before {
-  opacity: 1;
-  filter: blur(2px);
-  border-radius: 40%;
-  animation: glow 12s linear infinite;
+  transform: translateX(100%);
 }
