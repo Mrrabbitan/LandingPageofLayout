@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "antd";
+import { Button, Switch } from "antd";
 import "./index.css";
 const ReactButtonComponet: React.FC = () => {
   let language =
@@ -40,6 +40,7 @@ const ReactButtonComponet: React.FC = () => {
       >
         {lan}
       </Button>
+      <Switch checkedChildren="Chinese" unCheckedChildren="English"></Switch>
     </div>
   );
 };

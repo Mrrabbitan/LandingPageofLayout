@@ -12,12 +12,12 @@ const ClaRingComponent: React.FC = () => {
       </div>
       <div className="dataStorage btn_all">
         <ClaButtonComponents
-          url={"https://cla-msd-od.momenta.works/#/list/odBag"}
+          url={"https://milkyway.momenta.works/#/home/dataCollection"}
         ></ClaButtonComponents>
       </div>
       <div className="milkyWay btn_all">
         <ClaButtonComponents
-          url={"https://milkyway.momenta.works/#/home/dataCollection"}
+          url={"https://cla-msquare.momenta.works/#/list/cla"}
         ></ClaButtonComponents>
       </div>
       <div className="inner">

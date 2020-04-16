@@ -75,7 +75,6 @@
 .total {
   height: 800px;
   width: 800px;
-
   position: absolute;
   top: 12%;
   left: 43%;
@@ -97,8 +96,8 @@
   bottom: -5px;
   right: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #0268ea, #1d2087, #1d2087);
-  background-size: 300%;
+  background: #0268ea;
+  background-size: 90%;
   border-radius: 50%;
   opacity: 0;
   transition: 0.5s;
@@ -125,23 +124,24 @@
 }
 .inner:hover::before {
   opacity: 1;
-  filter: blur(40px);
+  filter: blur(20px);
   border-radius: 50%;
   animation: glow 12s linear infinite;
 }
-
-.inner:hover {
+/* 添加按钮进入圆环转动效果 */
+/* .inner:hover {
   transition-duration: 140s;
   transition-property: transform;
   transform: rotate(6000deg);
   transition-timing-function: linear;
-}
+} */
 .outer {
   height: 840px;
   width: 840px;
   position: absolute;
   top: 3%;
   left: -3%;
+  z-index: 99;
 }
 
 .btn_all::before {
