@@ -1,16 +1,16 @@
 import React from "react";
-import { Button } from "antd";
 
 interface buttonparams {
-  url: string;
+  url?: string;
+  imgurl?: string;
 }
 
 const ClaButtonComponents: React.FC<buttonparams> = (props) => {
-  const { url } = props;
+  const { url, imgurl } = props;
   return (
     <>
       <a href={url}>
-        <img src="/button.png" height="64px"></img>
+        <img alt="switch_language" src={imgurl} height="64px"></img>
       </a>
     </>
   );

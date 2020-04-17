@@ -57,6 +57,12 @@
   left: -80px;
   cursor: pointer;
 }
+.datagif {
+  position: absolute;
+  top: 64px;
+  left: -80px;
+  cursor: pointer;
+}
 
 .dataStorage {
   position: absolute;
@@ -68,6 +74,28 @@
   position: absolute;
   top: 15px;
   left: 280px;
+  cursor: pointer;
+  z-index: 100;
+}
+.DataAnotation {
+  position: absolute;
+  top: 210px;
+  right: -68px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.ModleTraining {
+  position: absolute;
+  top: 464px;
+  right: -150px;
+  cursor: pointer;
+  z-index: 100;
+}
+.TestViladation {
+  position: absolute;
+  top: 665px;
+  left: 282px;
   cursor: pointer;
   z-index: 100;
 }
@@ -88,7 +116,7 @@
   z-index: 100;
 }
 
-.inner::before {
+/* .inner::before {
   position: absolute;
   content: "";
   top: -5px;
@@ -97,7 +125,7 @@
   right: -5px;
   z-index: -1;
   background: #0268ea;
-  background-size: 90%;
+  background-size: 300%;
   border-radius: 50%;
   opacity: 0;
   transition: 0.5s;
@@ -114,11 +142,11 @@
   background-size: 50%;
   border-radius: 50%;
   opacity: 0;
-  transition: 0.5s;
-}
-.inner:hover::after {
+  transition: 0.5s; */
+/* } */
+/* .inner:hover::after {
   opacity: 1;
-  filter: blur(40px);
+  filter: blur(20px);
   border-radius: 50%;
   animation: glow 12s linear infinite;
 }
@@ -127,7 +155,7 @@
   filter: blur(20px);
   border-radius: 50%;
   animation: glow 12s linear infinite;
-}
+} */
 /* 添加按钮进入圆环转动效果 */
 /* .inner:hover {
   transition-duration: 140s;
@@ -135,34 +163,20 @@
   transform: rotate(6000deg);
   transition-timing-function: linear;
 } */
+/* .inner:hover::before {
+  transition-duration: 1400s;
+  transition-property: transform;
+  transform: rotate(60000deg);
+}
+.inner:hover::after {
+  transition-duration: 1400s;
+  transition-property: transform;
+  transform: rotate(60000deg);
+} */
 .outer {
   height: 840px;
   width: 840px;
   position: absolute;
   top: 3%;
   left: -3%;
-  z-index: 99;
-}
-
-.btn_all::before {
-  position: absolute;
-  content: "";
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  z-index: -1;
-  background: linear-gradient(45deg, #cf9d4b, #f37d2c, #d18c1b);
-  background-size: 100%;
-  animation: glow 12s linear infinite;
-  opacity: 0;
-  border-radius: 40%;
-  transition: 2s;
-}
-
-.btn_all:hover::before {
-  opacity: 1;
-  filter: blur(2px);
-  border-radius: 40%;
-  animation: glow 12s linear infinite;
 }

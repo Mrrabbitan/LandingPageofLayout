@@ -1,20 +1,19 @@
 import React from "react";
-import { Row, Col } from "antd";
 import "./index.css";
 
 const FrontPageComponent: React.FC = () => {
   return (
     <>
       <div className="logo">
-        <img src="/logo.png" width="330px"></img>
+        <img alt="momentaLogo" src="/logo.png" width="330px"></img>
       </div>
-      <Row className="oneRow">
-        <Col span={2} className="leftBlue"></Col>
-        <Col span={2} className="leftBlueSec"></Col>
-        <Col span={2} className="middleWhite"></Col>
-        <Col span={2} className="rightBlue"></Col>
+      <div className="oneRow">
+        <div className="leftBlue"></div>
+        <div className="leftBlueSec"></div>
+        <div className="middleWhite"></div>
+        <div className="rightBlue"></div>
         {/* <Col span={2} className="orangeLine"></Col> */}
-      </Row>
+      </div>
     </>
   );
 };
