@@ -10,7 +10,7 @@ const ClaButtonComponents: React.FC<buttonparams> = (props) => {
   return (
     <>
       <a href={url}>
-        <img alt="switch_language" src={imgurl} height="64px"></img>
+        <img alt="switch_language" src={imgurl} height="54px"></img>
       </a>
     </>
   );

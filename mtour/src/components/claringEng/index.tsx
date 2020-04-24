@@ -43,18 +43,20 @@ const ClaRingComponentEng: React.FC = () => {
       </div>
       <div className="innerEng">
         <img
+          className="inner_imgEng"
           alt="cla_eve_loop_eng"
           src="/eng_inner.png"
-          height="550px"
-          width="550px"
+          height="460px"
+          width="460px"
         ></img>
       </div>
       <div className="outerEng">
         <img
+          className="outer_imgEng"
           alt="cla_eve_loop_eng"
           src="/eng_outer.png"
-          height="720px"
-          width="950px"
+          height="600px"
+          width="790px"
         ></img>
       </div>
     </div>

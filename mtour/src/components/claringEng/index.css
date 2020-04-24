@@ -53,32 +53,32 @@
 
 .dataCollectionEng {
   position: absolute;
-  top: 464px;
-  left: -170px;
+  top: 460px;
+  left: -80px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 
 .dataStorageEng {
   position: absolute;
-  top: 210px;
-  left: -165px;
+  top: 245px;
+  left: -76px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 .milkyWayEng {
   position: absolute;
-  top: 15px;
-  left: 250px;
+  top: 80px;
+  left: 270px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 .DataAnotationEng {
   position: absolute;
-  top: 210px;
+  top: 250px;
   right: -160px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 
 .ModleTrainingEng {
@@ -86,33 +86,39 @@
   top: 464px;
   right: -150px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 .TestViladationEng {
   position: absolute;
-  top: 665px;
-  left: 240px;
+  top: 628px;
+  left: 265px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 
 .totalEng {
-  height: 800px;
-  width: 800px;
+  height: 700px;
+  width: 700px;
 
   position: absolute;
-  top: 12%;
-  left: 43%;
+  top: 17%;
+  left: 52%;
 }
 .innerEng {
   height: 550px;
   width: 550px;
   position: absolute;
-  top: 13%;
-  left: 16%;
+  top: 23%;
+  left: 18%;
   z-index: 100;
 }
-
+.outerEng {
+  height: 840px;
+  width: 840px;
+  position: absolute;
+  top: 13%;
+  left: -4%;
+}
 /* .innerEng::before {
   position: absolute;
   content: "";
@@ -172,15 +178,9 @@
   transform: rotate(60000deg);
 } */
 
-.outerEng {
-  height: 840px;
-  width: 840px;
-  position: absolute;
-  top: 3%;
-  left: -10%;
-}
 .btn_all {
   overflow: hidden;
+  border-radius: 60%;
 }
 .btn_all::before {
   position: absolute;
@@ -189,6 +189,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10%;
   background: linear-gradient(
     120deg,
     rgba(248, 247, 246, 0),
@@ -207,4 +208,210 @@
 
 .btn_all:hover::before {
   transform: translateX(100%);
+}
+
+/* @media screen and (max-height: 900px) {
+  .totalEng {
+    top: 3%;
+  }
+} */
+
+@media screen and (max-width: 1681px) {
+  .totalEng {
+    top: 14%;
+    left: 40%;
+  }
+  .inner_imgEng {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_imgEng {
+    height: 450px;
+    width: 550px;
+  }
+  .outerEng {
+    top: 113px;
+  }
+  .dataCollectionEng {
+    left: 50px;
+    top: 385px;
+  }
+
+  .dataStorageEng {
+    left: 50px;
+    top: 225px;
+  }
+  .milkyWayEng {
+    left: 298px;
+    top: 100px;
+  }
+  .DataAnotationEng {
+    right: -32px;
+    top: 225px;
+  }
+
+  .TestViladationEng {
+    left: 291px;
+    top: 506px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .totalEng {
+    top: 14%;
+    left: 42%;
+  }
+  .inner_imgEng {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_imgEng {
+    height: 450px;
+    width: 550px;
+  }
+  .outerEng {
+    top: 113px;
+  }
+  .dataCollectionEng {
+    left: 50px;
+    top: 385px;
+  }
+
+  .dataStorageEng {
+    left: 50px;
+    top: 225px;
+  }
+  .milkyWayEng {
+    left: 298px;
+    top: 100px;
+  }
+  .DataAnotationEng {
+    right: -36px;
+    top: 225px;
+  }
+
+  .TestViladationEng {
+    left: 291px;
+    top: 506px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .totalEng {
+    top: 14%;
+    left: 38%;
+  }
+  .inner_imgEng {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_imgEng {
+    height: 450px;
+    width: 550px;
+  }
+  .outerEng {
+    top: 113px;
+  }
+  .dataCollectionEng {
+    left: 50px;
+    top: 385px;
+  }
+
+  .dataStorageEng {
+    left: 50px;
+    top: 225px;
+  }
+  .milkyWayEng {
+    left: 298px;
+    top: 100px;
+  }
+  .DataAnotationEng {
+    right: -32px;
+    top: 225px;
+  }
+
+  .TestViladationEng {
+    left: 291px;
+    top: 506px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .totalEng {
+    top: 14%;
+    left: 34%;
+  }
+  .inner_imgEng {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_imgEng {
+    height: 450px;
+    width: 550px;
+  }
+  .outerEng {
+    top: 113px;
+  }
+  .dataCollectionEng {
+    left: 50px;
+    top: 385px;
+  }
+
+  .dataStorageEng {
+    left: 50px;
+    top: 225px;
+  }
+  .milkyWayEng {
+    left: 298px;
+    top: 100px;
+  }
+  .DataAnotationEng {
+    right: -32px;
+    top: 225px;
+  }
+
+  .TestViladationEng {
+    left: 291px;
+    top: 506px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .totalEng {
+    top: 14%;
+    left: 30%;
+  }
+  .inner_imgEng {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_imgEng {
+    height: 450px;
+    width: 550px;
+  }
+  .outerEng {
+    top: 113px;
+  }
+  .dataCollectionEng {
+    left: 50px;
+    top: 385px;
+  }
+
+  .dataStorageEng {
+    left: 50px;
+    top: 225px;
+  }
+  .milkyWayEng {
+    left: 298px;
+    top: 100px;
+  }
+  .DataAnotationEng {
+    right: -32px;
+    top: 225px;
+  }
+
+  .TestViladationEng {
+    left: 291px;
+    top: 506px;
+  }
 }

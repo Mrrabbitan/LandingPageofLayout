@@ -2,17 +2,36 @@ body::-webkit-scrollbar {
   display: none;
 }
 body {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
+.App {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .logo {
-  height: 73px;
+  height: 16px;
   width: 526px;
   position: absolute;
-  top: 4%;
-  left: 6%;
+  top: 40px;
+  left: 144px;
   color: white;
   font-size: 40px;
   z-index: 100;
+}
+.logo_right {
+  margin-left: 20px;
+  margin-top: 7px;
 }
 
 .oneRow {
@@ -36,7 +55,7 @@ body {
 }
 .leftBlueSec {
   height: 190%;
-  width: 478px;
+  width: 630pt;
   background: #0068e8;
   transform-origin: right top;
   transform: rotate(15deg);
@@ -44,12 +63,20 @@ body {
   left: 180px;
   top: -110px;
 }
+
+.printStyle {
+  transform: rotate(-15deg);
+  position: absolute;
+  left: 150px;
+  top: 560px;
+  z-index: 20;
+}
 .rightBlue {
-  height: 120%;
-  width: 200px;
+  height: 220%;
+  width: 400px;
   position: absolute;
   top: 120px;
-  right: -350px;
+  right: -550px;
   transform-origin: right top;
   transform: rotate(15deg);
   background: #0068e8;
@@ -65,144 +92,72 @@ body {
   transform: skewX(-15deg);
 }
 
-@media screen and (max-width: 1600px) {
-  .logo {
-    left: 5%;
+@media screen and (max-width: 1681px) {
+  .leftBlueSec {
+    width: 480pt;
+    left: 130px;
   }
-}
-@media screen and (max-width: 1500px) {
-  .logo {
-    left: 5.5%;
+  .printStyle {
+    width: 490px;
+    top: 510px;
+    left: 100px;
   }
-}
-@media screen and (max-width: 1400px) {
   .logo {
-    left: 6%;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .logo {
-    left: 6.5%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .logo {
-    left: 7%;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .logo {
-    left: 7.5%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .logo {
-    left: 8%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .logo {
-    left: 8.5%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .logo {
-    left: 9.5%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .logo {
-    left: 10.5%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .logo {
-    left: 10.5%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .logo {
-    left: 12.5%;
+    left: 70px;
   }
 }
 
-/* @media screen and (max-height: 780px) {
-  .orangeLine {
-    width: 460px;
+@media screen and (max-width: 1440px) {
+  .leftBlueSec {
+    width: 400pt;
+    left: 110px;
+  }
+  .printStyle {
+    width: 400px;
+    top: 510px;
+    left: 110px;
+  }
+  .logo {
+    left: 60px;
   }
 }
-@media screen and (max-height: 760px) {
-  .orangeLine {
-    width: 470px;
+
+@media screen and (max-width: 1280px) {
+  .logo_right {
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 14px;
+  }
+  .logo_left {
+    width: 140px;
+  }
+  .leftBlueSec {
+    width: 340pt;
+    left: 110px;
+  }
+  .printStyle {
+    width: 370px;
+    top: 510px;
+    left: 80px;
+  }
+  .logo {
+    left: -30px;
   }
 }
-@media screen and (max-height: 740px) {
-  .orangeLine {
-    width: 490px;
+
+@media screen and (max-width: 1080px) {
+  body {
+    min-height: 800px;
   }
 }
-@media screen and (max-height: 720px) {
-  .orangeLine {
-    width: 500px;
+
+/* @media screen and (max-height: 900px) {
+  .printStyle {
+    top: 440px;
   }
 }
 @media screen and (max-height: 700px) {
-  .orangeLine {
-    width: 510px;
-  }
-}
-@media screen and (max-height: 680px) {
-  .orangeLine {
-    width: 520px;
-  }
-}
-@media screen and (max-height: 650px) {
-  .orangeLine {
-    width: 530px;
-  }
-}
-@media screen and (max-height: 620px) {
-  .orangeLine {
-    width: 535px;
-  }
-}
-@media screen and (max-height: 580px) {
-  .orangeLine {
-    width: 545px;
-  }
-}
-@media screen and (max-height: 540px) {
-  .orangeLine {
-    width: 560px;
-  }
-}
-@media screen and (max-height: 500px) {
-  .orangeLine {
-    width: 565px;
-  }
-}
-@media screen and (max-height: 450px) {
-  .orangeLine {
-    width: 572px;
-  }
-}
-@media screen and (max-height: 400px) {
-  .orangeLine {
-    width: 580px;
-  }
-}
-@media screen and (max-height: 350px) {
-  .orangeLine {
-    width: 585px;
-  }
-}
-@media screen and (max-height: 300px) {
-  .orangeLine {
-    width: 590px;
-  }
-}
-@media screen and (max-height: 250px) {
-  .orangeLine {
-    width: 595px;
+  .printStyle {
+    top: 400px;
   }
 } */

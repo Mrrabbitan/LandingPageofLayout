@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import MainComponent from "./layout/main";
 import EnglishComponent from "./layout/eng";

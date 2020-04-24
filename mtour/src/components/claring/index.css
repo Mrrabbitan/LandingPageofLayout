@@ -53,36 +53,32 @@
 
 .dataCollection {
   position: absolute;
-  top: 464px;
-  left: -80px;
+  top: 458px;
+  left: -10px;
   cursor: pointer;
-}
-.datagif {
-  position: absolute;
-  top: 64px;
-  left: -80px;
-  cursor: pointer;
+  z-index: 200;
 }
 
 .dataStorage {
   position: absolute;
-  top: 210px;
-  left: -75px;
+  top: 240px;
+  left: -10px;
   cursor: pointer;
+  z-index: 200;
 }
 .milkyWay {
   position: absolute;
-  top: 15px;
-  left: 280px;
+  top: 68px;
+  left: 308px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 .DataAnotation {
   position: absolute;
-  top: 210px;
-  right: -68px;
+  top: 240px;
+  right: 2px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 
 .ModleTraining {
@@ -90,28 +86,28 @@
   top: 464px;
   right: -150px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 .TestViladation {
   position: absolute;
-  top: 665px;
-  left: 282px;
+  top: 630px;
+  left: 307px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 
 .total {
   height: 800px;
   width: 800px;
   position: absolute;
-  top: 12%;
-  left: 43%;
+  top: 17%;
+  left: 52%;
 }
 .inner {
   height: 550px;
   width: 550px;
   position: absolute;
-  top: 13%;
+  top: 20%;
   left: 16%;
   z-index: 100;
 }
@@ -177,6 +173,171 @@
   height: 840px;
   width: 840px;
   position: absolute;
-  top: 3%;
+  top: 10%;
   left: -3%;
 }
+
+@media screen and (max-width: 1681px) {
+  .total {
+    top: 14%;
+    left: 42%;
+  }
+  .inner_img {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_img {
+    height: 450px;
+    width: 470px;
+  }
+  .outer {
+    top: 113px;
+  }
+  .dataCollection {
+    left: 90px;
+    top: 380px;
+  }
+
+  .dataStorage {
+    left: 90px;
+    top: 220px;
+  }
+  .milkyWay {
+    left: 318px;
+    top: 100px;
+  }
+  .DataAnotation {
+    right: 102px;
+    top: 225px;
+  }
+
+  .TestViladation {
+    left: 321px;
+    top: 506px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .total {
+    top: 13%;
+    left: 38%;
+  }
+  .inner_img {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_img {
+    height: 450px;
+    width: 470px;
+  }
+  .outer {
+    top: 113px;
+  }
+  .dataCollection {
+    left: 90px;
+    top: 380px;
+  }
+
+  .dataStorage {
+    left: 90px;
+    top: 220px;
+  }
+  .milkyWay {
+    left: 318px;
+    top: 100px;
+  }
+  .DataAnotation {
+    right: 102px;
+    top: 225px;
+  }
+
+  .TestViladation {
+    left: 321px;
+    top: 506px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .total {
+    top: 13%;
+    left: 34%;
+  }
+  .inner_img {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_img {
+    height: 450px;
+    width: 470px;
+  }
+  .outer {
+    top: 113px;
+  }
+  .dataCollection {
+    left: 90px;
+    top: 380px;
+  }
+
+  .dataStorage {
+    left: 90px;
+    top: 220px;
+  }
+  .milkyWay {
+    left: 318px;
+    top: 100px;
+  }
+  .DataAnotation {
+    right: 102px;
+    top: 225px;
+  }
+
+  .TestViladation {
+    left: 321px;
+    top: 506px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .total {
+    top: 13%;
+    left: 29%;
+  }
+  .inner_img {
+    height: 350px;
+    width: 350px;
+  }
+  .outer_img {
+    height: 450px;
+    width: 470px;
+  }
+  .outer {
+    top: 113px;
+  }
+  .dataCollection {
+    left: 90px;
+    top: 380px;
+  }
+
+  .dataStorage {
+    left: 90px;
+    top: 220px;
+  }
+  .milkyWay {
+    left: 318px;
+    top: 100px;
+  }
+  .DataAnotation {
+    right: 102px;
+    top: 225px;
+  }
+
+  .TestViladation {
+    left: 321px;
+    top: 506px;
+  }
+}
+
+/* @media screen and (max-height: 900px) {
+  .total {
+    top: 6%;
+  }
+} */
