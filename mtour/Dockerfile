@@ -1,13 +1,15 @@
 ### stage: build ###
-FROM node:8.16.2-alpine AS build
+FROM artifactory.momenta.works/docker/node:lts-alpine AS builder
 
 WORKDIR /
 
 COPY package.json yarn.lock ./
 
-RUN yarn install 
+RUN yarn config set registry https://artifactory.momenta.works/artifactory/api/npm/npm/ \  
 
-COPY / /
+  && yarn install 
+
+COPY . /
 
 RUN yarn build
 
@@ -20,6 +22,6 @@ LABEL app=panoWebsite
 
 COPY nginx/ /etc/nginx/
 
-COPY build/ /usr/share/nginx/html
+COPY --from=builder /build/ /usr/share/nginx/html
 
 EXPOSE 80

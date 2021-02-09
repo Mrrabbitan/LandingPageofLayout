@@ -4,7 +4,7 @@ import ClaButtonComponents from '../clabutton/button'
 const ClaRingComponentEng: React.FC = () => {
   const exchangUrlDataCollect = () => {
     if (window.location.pathname === '/mpilot-parking/') {
-      return 'http://ultron.momenta.works/dashboard/'
+      return 'http://ultron.momenta.works/rec_data/trigger_info#'
     } else {
       return 'https://msd-test.momenta.works/FilterTask/FilterBagMonitor'
     }
